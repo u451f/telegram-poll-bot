@@ -1,0 +1,15 @@
+name: run pollbot.py
+
+on:
+  schedule:
+    - cron '0 15 * * 5' # every Friday on 15h
+
+jobs:
+  build:
+    runs-on: debian-stable
+    steps:
+    - name: execute pollbot
+      env:
+        TOKEN: {{$TELEGRAM_BOT_TOKEN}}
+        CHAT_ID: {{$TELEGRAM_CHAT_ID}}
+      run: python pollbot.py

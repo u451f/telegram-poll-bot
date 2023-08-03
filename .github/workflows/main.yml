@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    runs-on: debian-stable
+    runs-on: ubuntu-latest
     steps:
     - name: execute pollbot
       env:

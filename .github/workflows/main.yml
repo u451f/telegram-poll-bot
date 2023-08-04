@@ -1,15 +1,15 @@
 name: run pollbot.py
 
 on:
-  schedule:
-    - cron '0 15 * * 5' # every Friday on 15h
+  workflow_dispatch
 
 jobs:
-  build:
-    runs-on: debian-stable
+  send_poll:
+    runs-on: ubuntu-latest
     steps:
-    - name: execute pollbot
+    
+    - name: send poll
       env:
-        TOKEN: {{$TELEGRAM_BOT_TOKEN}}
-        CHAT_ID: {{$TELEGRAM_CHAT_ID}}
+        TOKEN: {{ $secrets.TELEGRAM_BOT_TOKEN }}
+        CHAT_ID: {{ $secrets.TELEGRAM_CHAT_ID }}
       run: python pollbot.py

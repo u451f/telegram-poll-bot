@@ -1,14 +1,7 @@
 name: run pollbot.py
 
 on:
-  workflow_dispatch:
-    secrets:
-      TOKEN:
-        required: true
-        description: ''
-       CHAT_ID:
-        required: true
-        description: ''
+  workflow_dispatch
   
 jobs:
   send_poll:

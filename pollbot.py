@@ -45,5 +45,5 @@ parameters2 = {
 
 response = requests.get(base_url, data = parameters)
 response2 = requests.get(base_url, data = parameters2)
-print(response.text)
-print(response2.text)
+#print(response.text)
+#print(response2.text)

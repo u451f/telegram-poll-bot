@@ -9,7 +9,7 @@ jobs:
     steps:
     
     - name: send poll
-      secrets:
-        TOKEN: {{ $TELEGRAM_BOT_TOKEN }}
-        CHAT_ID: {{ $TELEGRAM_CHAT_ID }}
+      env:
+        TOKEN: {{ $secrets.TELEGRAM_BOT_TOKEN }}
+        CHAT_ID: {{ $secrets.TELEGRAM_CHAT_ID }}
       run: python pollbot.py

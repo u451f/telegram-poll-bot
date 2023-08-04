@@ -3,13 +3,6 @@ name: run pollbot.py
 on:
   workflow_dispatch
 
-  workflow_call:
-    secrets:
-     TOKEN:
-        required: true
-     CHAT_ID:
-        required: true
-  
 jobs:
   send_poll:
     runs-on: ubuntu-latest

@@ -1,0 +1,4 @@
+python3-requests
+python3-json
+python3-datetime
+python3-os

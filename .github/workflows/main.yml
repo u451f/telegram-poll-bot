@@ -3,7 +3,7 @@ name: run pollbot.py
 on:
   schedule:
     - cron '0 15 * * 5' # every Friday on 15h
-on: push
+on: [push]
 
 jobs:
   send_poll:

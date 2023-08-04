@@ -18,3 +18,6 @@ The closing_date will always be automatically 8 days from the creation of the po
 
 Therefore, this script needs to be launched every Friday the week
 before, or by a cronjob.
+
+# check for broken requirements
+python -m pip check

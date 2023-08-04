@@ -5,12 +5,17 @@ import requests
 import json
 import datetime
 
-from dotenv import load_dotenv
-load_dotenv()
-TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
-CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
-
 base_url = "https://api.telegram.org/bot"+TOKEN+"/sendPoll"
+
+try:
+    TOKEN = os.environ("TOKEN")
+except KeyError:
+    TOKEN = "Token not available!"
+
+try:
+    CHAT_ID = os.environ("CHAT_ID")
+except KeyError:
+    CHAT_ID = "Chat ID not available!"
 
 today = datetime.date.today()
 closing_date = today + datetime.timedelta(days = 8)

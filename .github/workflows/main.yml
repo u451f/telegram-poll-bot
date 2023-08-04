@@ -2,13 +2,21 @@ name: run pollbot.py
 
 on:
   workflow_dispatch
+
+  workflow_call:
+    secrets:
+     TOKEN:
+        required: true
+     CHAT_ID:
+        required: true
   
 jobs:
   send_poll:
     runs-on: ubuntu-latest
     steps:
+    
     - name: send poll
       secrets:
-        TOKEN: {{$TELEGRAM_BOT_TOKEN}}
-        CHAT_ID: {{$TELEGRAM_CHAT_ID}}
+        TOKEN: {{ $TELEGRAM_BOT_TOKEN }}
+        CHAT_ID: {{ $TELEGRAM_CHAT_ID }}
       run: python pollbot.py

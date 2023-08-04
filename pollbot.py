@@ -6,12 +6,12 @@ import json
 import datetime
 
 try:
-    TOKEN = os.environ("TOKEN")
+    TOKEN = os.environ['TOKEN']
 except KeyError:
     TOKEN = "Token not available!"
 
 try:
-    CHAT_ID = os.environ("CHAT_ID")
+    CHAT_ID = os.environ['CHAT_ID']
 except KeyError:
     CHAT_ID = "Chat ID not available!"
 

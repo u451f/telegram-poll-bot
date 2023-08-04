@@ -21,7 +21,7 @@ next_week = str(week_num + 1)
 parameters = {
     "chat_id" : CHAT_ID,
     "question" : "Kochen W"+next_week,
-    "options" : json.dumps(["Mo", "Di", "Mi", "Do", "Fr"]),
+    "options" : json.dumps(["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "nur Ergebnisse sehen"]),
     "is_anonymous" : False,
     "public_voters": True,
     "allows_multiple_answers": True,
@@ -31,7 +31,7 @@ parameters = {
 parameters2 = {
     "chat_id" : CHAT_ID,
     "question" : "Essen W"+next_week,
-    "options" : json.dumps(["Mo", "Di", "Mi", "Do", "Fr"]),
+    "options" : json.dumps(["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "nur Ergebnisse sehen"]),
     "is_anonymous" : False,
     "public_voters": True,
     "allows_multiple_answers": True,

@@ -26,11 +26,16 @@ On Telegram:
 
 - https://core.telegram.org/constructor/poll
 
+# Launching the script
+
+This script needs to be launched every Friday the week before. This can
+be done by a cronjob or by a Github workflow (see .github/workflows for
+code). We are currently using the Github workflow.
+
 # Specifics
 
 The closing_date will always be automatically 8 days from the creation of the poll.
 
-This script needs to be launched every Friday the week before (using Github), or by a cronjob.
 
 # check for broken requirements
 

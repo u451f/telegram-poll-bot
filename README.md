@@ -13,9 +13,12 @@ chmod +x pollbot.py
 On Telegram:
 
 - talk to @BotFather and create a new bot
-- copy token and add to .dotenv (requires python3-dotenv package) →
-  or actually add that to Github secrets - this is what we work with.
-- test if token works: https://api.telegram.org/botTOKEN/getMe (replace TOKEN) by actual token
+- copy token and add to .dotenv (requires python3-dotenv package) → or
+  actually add that to Github secrets (settings → secrets and variables
+  → actions → Repository secrets) - this is what we work with (we need
+  TOKEN and CHAT_ID)
+- test if token works: https://api.telegram.org/botTOKEN/getMe (replace
+  TOKEN) by actual token
 
 ## Add bot to the group or channel where it shall post the polls
 

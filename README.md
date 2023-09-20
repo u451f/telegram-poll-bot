@@ -37,6 +37,6 @@ code). We are currently using the Github workflow.
 The closing_date will always be automatically 8 days from the creation of the poll.
 
 
-# check for broken requirements
+# Check for broken requirements
 
 `python -m pip check`

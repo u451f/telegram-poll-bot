@@ -1,5 +1,9 @@
 #!/usr/bin/python
 
+"""
+Telegram polling using a bot
+"""
+
 import os
 import json
 import datetime

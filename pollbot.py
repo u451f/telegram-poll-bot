@@ -49,7 +49,7 @@ parameters2 = {
     "close_poll": closing_date
 }
 
-response = requests.get(base_url, data = parameters)
-response2 = requests.get(base_url, data = parameters2)
+response = requests.get(base_url, data = parameters, timeout=60)
+response2 = requests.get(base_url, data = parameters2, timeout=60)
 #print(response.text)
 #print(response2.text)

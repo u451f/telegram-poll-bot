@@ -2,7 +2,7 @@ name: run pollbot.py
 
 on:
   schedule:
-      - cron: '0 15 * * 5'
+      - cron: '0 13 * * 5'
 
 jobs:
   build:

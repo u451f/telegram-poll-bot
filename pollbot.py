@@ -1,9 +1,9 @@
 #!/usr/bin/python
 
 import os
-import requests
 import json
 import datetime
+import requests
 
 try:
     TOKEN = os.environ['TOKEN']
@@ -21,7 +21,7 @@ today = datetime.date.today()
 closing_date = today + datetime.timedelta(days = 8)
 
 year, week_num, day_of_week = today.isocalendar()
-if(week_num == 52):
+if week_num == 52:
     week_num = 0
 next_week = str(week_num + 1)
 

@@ -20,14 +20,14 @@ base_url = "https://api.telegram.org/bot"+TOKEN+"/sendPoll"
 today = datetime.date.today()
 closing_date = today + datetime.timedelta(days = 8)
 
-year, week_num, day_of_week = today.isocalendar()
-if week_num == 52:
-    week_num = 0
-next_week = str(week_num + 1)
+year, WEEK_NUM, day_of_week = today.isocalendar()
+if WEEK_NUM == 52:
+    WEEK_NUM = 0
+NEXT_WEEK = str(WEEK_NUM + 1)
 
 parameters = {
     "chat_id" : CHAT_ID,
-    "question" : "Kochen W"+next_week,
+    "question" : "Kochen W"+NEXT_WEEK,
     "options" : json.dumps(["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "nur Ergebnisse sehen"]),
     "is_anonymous" : False,
     "public_voters": True,
@@ -37,7 +37,7 @@ parameters = {
 
 parameters2 = {
     "chat_id" : CHAT_ID,
-    "question" : "Essen W"+next_week,
+    "question" : "Essen W"+NEXT_WEEK,
     "options" : json.dumps(["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "nur Ergebnisse sehen"]),
     "is_anonymous" : False,
     "public_voters": True,

@@ -1,6 +1,6 @@
 # What's that thing?
 
-This is a poll bot to ask my office peers who cooks and who wants to eat lunch.
+This is a poll bot to ask the office peers who cooks and who wants to eat lunch.
 Super precise, but maybe you can adapt it to your needs. Also… it talks
 German :)
 
